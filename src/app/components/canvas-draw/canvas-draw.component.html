@@ -1,9 +1,13 @@
-<ion-toolbar id="top-toolbar">
 
-</ion-toolbar>
 
-<canvas #myCanvas (touchstart)="handleStart($event)" (touchmove)="handleMove($event)"></canvas>
+<div id="rgb">HEX: <input type="text" value="{{foundColor}}" readonly></div>
+<div id="rgb">Accuracy: <input type="text" value="{{accuracyPoints}}" readonly></div>
+<div id="rgb">Inaccuracy: <input type="text" value="{{inaccuracyPoints}}" readonly></div>
 
-<ion-toolbar id="bottom-toolbar">
+<canvas width="600" id="canvas" height="440" #myCanvas (touchstart)="handleStart($event)" (touchmove)="handleMove($event)"></canvas>
 
-</ion-toolbar>
+
+
+
+    
+
